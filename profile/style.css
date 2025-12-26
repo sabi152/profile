@@ -1,0 +1,102 @@
+/* 全体の基本設定 */
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #f0f2f5;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    color: #333;
+}
+
+/* メインコンテナ（プロ風カード） */
+.profile {
+    max-width: 720px;
+    margin: 60px auto;
+    background: #fff;
+    padding: 50px 40px;
+    border-radius: 18px;
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.12);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+/* ホバーで少し持ち上がる演出 */
+.profile:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.18);
+}
+
+/* タイトル（プロ風の太めフォント） */
+.profile h1 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: #222;
+    letter-spacing: 1px;
+}
+
+/* 画像を丸く＋影追加でプロ感アップ */
+.profile img {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 6px solid #fff;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+    margin-bottom: 30px;
+}
+
+/* テキスト（読みやすいプロフォント間隔） */
+.profile p {
+    font-size: 18px;
+    line-height: 1.9;
+    text-align: left;
+    color: #555;
+    padding: 0 15px;
+    margin-top: 20px;
+    white-space: pre-line; /* 箇条書きを見やすく */
+}
+
+/* 見出し（シンプルな線で強調） */
+.profile h2 {
+    font-size: 24px;
+    color: #222;
+    border-left: 5px solid #53f04e;
+    border-right:5px solid #53f04e;
+    padding-left: 12px;
+    margin: 35px 0 15px;
+}
+
+/* リンクをプロ風ブルーに */
+a {
+    color: #2563eb;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 600px) {
+  .profile {
+    margin: 20px;
+    padding: 25px 20px;
+  }
+
+  .profile h1 {
+    font-size: 22px;
+  }
+
+  .profile h2 {
+    font-size: 18px;
+  }
+
+  .profile p {
+    font-size: 15px;
+    padding: 0;
+  }
+
+  .profile img {
+    width: 140px;
+    height: 140px;
+  }
+}
