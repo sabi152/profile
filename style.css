@@ -62,6 +62,10 @@ body {
   font-size: 13px;
   text-align: left;
 }
+
+.career-year.empty{
+  content-visibility: hidden;
+}
 /* 画像を丸く＋影追加でプロ感アップ */
 .profile img {
     width: 220px;
